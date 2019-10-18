@@ -1,8 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">ApplicationMuscu</string>
-    <string name="hello_world">Hello world!</string>
+    <!-- String globaux -->
     <string name="action_settings">Settings</string>
+    <string name="app_name">applicationMuscu</string>
+    
+    <!-- String dans l'activité Main -->
+    <string name="titre1">Entrainement muscu</string>
+    <string name="phraseAccroche">UN ESPRIT SOLIDE DANS UN CORPS SOLIDE</string>
+    <string name="btnCommencer">Commencer</string>
+    <string name="btnSeanceExistante">Séances existantes</string>
+    <string name="btnAPropos">A Propos</string>
+    
+    
+
+    <dimen name="tailleTexteLegende">15sp</dimen>
+    <dimen name="marginDeBase">18sp</dimen>
+    <dimen name="marginBtnApropos">55dp</dimen>
+    <dimen name="longueurChamp">100sp</dimen>
+    <dimen name="hauteurChamp">40sp</dimen>
+
+    <string name="title_activity_entrainement">Séance en cours</string>
+    <string name="title_activity_pause">Pause</string>
+    <string name="tpsR">Temps restant :</string>
+    <string name="repos">Repos</string>
+    <string name="repetition">Répétition</string>
+    <string name="series">Série</string>
+    
+    <string name="title_activity_apropos">A propos</string>
+    <string name="ouvrirAPropos">ouvrirAPropos</string>
+    <string name="ouvrirParamSeance">ouvrirParamSeance</string>
+    <string name="nomseance">Nom</string>
+    <string name="objectif">Objectif</string>
+    <string name="btnDemarrerSeance">Démarrer !</string>
+    <string name="consigneSeanceExistante">Cliquer sur une séance pour la démarrer (cliquer sur la croix pour la supprimer)</string>
+
+    <!-- Nom des methodes pour les boutons -->
+    <string name="ouvrirEntrainement">clickDemarrer</string>
+    <string name="btnDemarrer">btnDemarrerActif</string>
+    <string name="ouvrirSeanceExistante">ouvrirSeanceExistante</string>
+    <string name="supprimerSeance">clickSupprimer</string>
+    
+    <!-- String dans l'activité Séance existante -->
+    <string name="click_recommencer">clickRecommencer</string>
+    
+    <!-- String dans l'activité Pause -->
+    <string name="trenteSec">30</string>
+
+    <string-array name="nomsObjectifs">
+        <item>Puissance</item>
+        <item>Renforcement</item>
+        <item>Masse</item>
+    </string-array>
+    <string-array name="typesExo">
+        <item>Bras</item>
+        <item>Epaules</item>
+        <item>Torse</item>
+        <item>Dos</item>
+        <item>Jambes</item>
+    </string-array>
+
+    <string name="apropos">Cette application a pour but de créer des séances d\'entrainement de musculation.
+        Elle a été créé dans le cadre d\'un projet, au sein de l\'IUT Informatique de Rangueil.
+        Auteurs: ARTIGOUHA Noémy et BOIRON Grégoire	</string>
+    <string name="title_activity_seance">Paramétrage d\'une séance</string>
+
+    <string name="title_activity_seances_existantes">Les séances existantes</string>
+    <string name="quitter">Quitter</string>
 
 </resources>

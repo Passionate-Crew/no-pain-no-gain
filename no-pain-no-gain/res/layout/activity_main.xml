@@ -1,16 +1,52 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.applicationmuscu.MainActivity" >
-
+    android:orientation="vertical"
+    android:background="@drawable/rocky"
+    tools:context="com.passionatecrew.nopainnogain.MainActivity" >
+    
     <TextView
+        android:id="@+id/objectif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginTopEcran"
+        android:text="@string/phraseAccroche"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/buttonAPropos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonSeanceExistante"
+        android:layout_alignRight="@+id/buttonSeanceExistante"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/marginBottomEcran"
+        android:onClick="@string/ouvrirAPropos"
+        android:text="@string/btnAPropos" />
+
+    <Button
+        android:id="@+id/buttonCommencer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonSeanceExistante"
+        android:layout_alignLeft="@+id/buttonSeanceExistante"
+        android:layout_alignRight="@+id/buttonSeanceExistante"
+        android:layout_centerHorizontal="true"
+        android:onClick="@string/ouvrirParamSeance"
+        android:text="@string/btnCommencer" />
+
+    <Button
+        android:id="@+id/buttonSeanceExistante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonAPropos"
+        android:layout_centerHorizontal="true"
+        android:onClick="@string/ouvrirSeanceExistante"
+        android:text="@string/btnSeanceExistante" />
 
 </RelativeLayout>

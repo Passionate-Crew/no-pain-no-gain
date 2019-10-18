@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.passionatecrew.nopainnogain.EntrainementActivity" >
+
+    <item
+    	android:id="@+id/menu_quitter"
+    	android:showAsAction="always"
+    	android:title="@string/quitter"
+        android:icon="@drawable/stop"/>
+    <item
+    	android:id="@+id/menu_apropos"
+    	android:showAsAction="never"
+    	android:title="@string/btnAPropos"/>
+
+</menu>

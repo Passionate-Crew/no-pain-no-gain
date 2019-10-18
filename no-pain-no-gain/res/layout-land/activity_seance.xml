@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayoutSeance"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:screenOrientation="landscape"
+    tools:context="com.passionatecrew.nopainnogain.SeanceActivity" >
+
+<ExpandableListView
+    android:id="@+id/expandableListView1"
+    android:layout_width="match_parent"
+    android:layout_height="150sp"
+    android:layout_alignParentRight="true"
+    android:layout_alignTop="@+id/EditTextNom"
+    android:layout_marginLeft="36dp"
+    android:layout_toRightOf="@+id/EditTextNom" >
+
+</ExpandableListView>
+
+<TextView
+    android:id="@+id/nom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="18dp"
+    android:layout_marginTop="36dp"
+    android:text="@string/nomseance"
+    android:textSize="@dimen/tailleTexteLegende" />
+
+<RadioGroup
+    android:id="@+id/radioGroupObj"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/EditTextNom"
+    android:layout_marginLeft="10dp"
+    android:layout_toEndOf="@+id/objectif" >
+
+    <RadioButton
+        android:id="@+id/radioButtonPuissance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/objectif"
+        android:layout_alignBottom="@+id/objectif"
+        android:layout_alignLeft="@+id/EditTextNom"
+        android:onClick="@string/btnDemarrer"
+        android:text="RadioButton" />
+
+    <RadioButton
+        android:id="@+id/radioButtonRenforcement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioButtonMasse"
+        android:layout_below="@+id/radioButtonMasse"
+        android:onClick="@string/btnDemarrer"
+        android:text="RadioButton" />
+
+    <RadioButton
+        android:id="@+id/radioButtonMasse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioButtonPuissance"
+        android:layout_below="@+id/radioButtonPuissance"
+        android:onClick="@string/btnDemarrer"
+        android:text="RadioButton" />
+</RadioGroup>
+
+<TextView
+    android:id="@+id/objectif"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/radioGroupObj"
+    android:layout_alignLeft="@+id/nom"
+    android:layout_marginBottom="36dp"
+    android:text="@string/objectif"
+    android:textSize="@dimen/tailleTexteLegende" />
+
+<EditText
+    android:id="@+id/EditTextNom"
+    android:layout_width="150sp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/nom"
+    android:layout_toEndOf="@+id/nom"
+    android:layout_marginLeft="30dp"
+    android:ems="10"
+    android:inputType="text|textCapWords"
+    android:onClick="@string/btnDemarrer" >
+
+    <requestFocus />
+</EditText>
+
+<Button
+    android:id="@+id/btnDemarrer"
+    android:layout_width="120sp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/expandableListView1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"
+    android:enabled="false"
+    android:gravity="center"
+    android:onClick="@string/ouvrirEntrainement"
+    android:text="@string/btnDemarrerSeance" />
+
+</RelativeLayout>

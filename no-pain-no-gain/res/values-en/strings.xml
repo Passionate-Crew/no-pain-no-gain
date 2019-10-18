@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- String dans l'activité Main -->
+    <string name="titre1">Training Session</string>
+    <string name="phraseAccroche">GO HARD OR GO HOME</string>
+    <string name="btnCommencer">Start</string>
+    <string name="btnSeanceExistante">Existing workout</string>
+    <string name="btnAPropos">About us</string>
+    
+</resources>
